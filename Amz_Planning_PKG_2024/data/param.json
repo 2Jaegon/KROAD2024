@@ -1,0 +1,61 @@
+{
+  "basic_data": {
+    "lidar": {
+      "traffic_cone_eps": 1.0,
+      "traffic_cone_min": 1,
+      "traffic_cone_max": 10
+    },
+    "control": {
+      "min_distance": 0.1,
+      "min_velocity": 0.1,
+      "brake_coefficient": 2
+    }
+  },
+  "missions": {
+    "first_lab_velocity": 2.5,
+    "closing_lab_velocity": 6.9,
+
+    "amz_rrt": {
+      "target_velocity": 2,
+      "front_cone_dist": 8,
+      "cone_obstacle_size": 0.1,
+      "valid_front_dist": 6,
+      "valid_behind_dist": 2,
+      "cone_target_dist_ratio": 0.5,
+
+      "iteration_number": 300,
+      "plan_distance": 8,
+      "expand_distance": 0.8,
+      "expand_angle": 17.0
+    },
+
+    "amz_dwa": {
+      "valid_front_dist": 6,
+      "valid_behind_dist": 1,
+      "front_angle": 70,
+      "target_velocity": 2,
+
+      "car_radius": 0.5,
+      "max_linear_velocity": 3.0,
+      "min_linear_velocity": 0.0,
+      "max_angular_velocity": 3.0,
+      "max_linear_acceleration": 3.0,
+      "max_angular_acceleration": 3.0,
+      "dt": 0.01,
+      "window_time": 1.6,
+      "linear_velocity_resolution": 0.1,
+      "angular_velocity_resolution": 0.1,
+      "goal_cost_weight": 1.5,
+      "velocity_cost_weight": 0.7,
+      "obstacle_cost_weight": 2.0,
+      "smoothness_cost_weight": 0.3,
+      "kSmoothnessCostWeight": 0.6,
+      "yaw_filter_param": 8
+    },
+
+    "global_path_generator": {
+      "record_distance": 1.0,
+      "spline_num": 3
+    }
+  }
+}

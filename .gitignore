@@ -1,0 +1,17 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ROS build artifacts
+build/
+devel/
+install/
+log/
+
+# OS generated
+.DS_Store
+Thumbs.db
+*.swp
+*~
+

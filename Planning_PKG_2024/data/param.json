@@ -1,0 +1,158 @@
+{
+  "basic_data": {
+    "lidar": {
+      "small_static_eps": 2,
+      "small_static_min": 10,
+      "small_static_max": 15,
+      "big_static_eps": 1,
+      "big_static_min": 1,
+      "big_static_max": 2,
+      "parking_point_eps": 1,
+      "parking_point_min": 1,
+      "parking_point_max": 10,
+      "delivery_flag_a_eps": 1,
+      "delivery_flag_a_min": 10,
+      "delivery_flag_a_max": 15,
+      "delivery_flag_b_eps": 1,
+      "delivery_flag_b_min": 7,
+      "delivery_flag_b_max": 30,
+      "u_turn_point_eps": 1,
+      "u_turn_point_min": 5,
+      "u_turn_point_max": 10
+    },
+    "control": {
+      "min_distance": 0.1,
+      "min_velocity": 0.1,
+      "brake_coefficient": 1
+    }
+  },
+  "missions": {
+    "small_static": {
+      "start_velocity": 1.5,
+      "end_velocity": 5.0,
+      "inner_ratio": 0.5,
+      "evade_radian": 1.1,
+      "inner_distance": 0.1,
+      "evade_distance": 2.0,
+      "lane_width": 2
+    },
+
+    "big_static": {
+      "spline_offset": 10,
+      "start_velocity": 4,
+      "straight_velocity": 4,
+      "lane_change_velocity": 2,
+      "end_velocity": 5,
+      "lane_change_offset": 10,
+      "car_length": 3
+    },
+
+    "delivery_new": {
+      "a_start_velocity": 4,
+      "a_end_velocity": 3,
+      "b_start_velocity": 1.5,
+      "b_reverse_velocity": -1,
+      "b_escape_velocity": 2,
+      "b_end_velocity": 4,
+      "b_change_distance": 6.1,
+      "b_change_offset": 30,
+      "b_escape_path_offset": 20,
+      "b_stop_distance": 2.2,
+      "b_reverse_distance": 2.7
+    },
+
+    "parking": {
+      "center_o1_y_up": 0.5,
+      "parking_point_x_down": 1.0,
+      "parking_start_point_y_up": 1.6,
+      "pre_parking_start_point_x_up": 1.2,
+      "radius_o1_size": 2.1,
+      "radius_o3_size": 2.3,
+      "ready_parking_stop_dis": 1.4,
+      "reverse_parking_stop_dis": 2.2,
+      "serial_e_stop": 0,
+      "serial_nomal": 1.5,
+      "serial_aacceleration": 6.9,
+      "serial_reverse": -1
+    },
+
+    "u_turn": {
+      "uturn_velocity": 3,
+      "end_velocity": 6.0
+    },
+
+    "tunnel_morai": {
+      "head": 4,
+      "ratio": 1.9,
+      "obstacle_min_dist": 8,
+      "between_obs_n_wall": 4.0,
+      "obs_offset01": 1.1,
+      "obs_offset02": 1.5,
+      "vel_init": 2.0,
+      "vel_smallstatic": 2.0,
+      "vel_dynamic": 3.0
+    },
+
+    "tunnel_KCITY": {
+      "head": 4,
+      "ratio": 1.9,
+      "obstacle_min_dist": 7,
+      "between_obs_n_wall": 5.0,
+      "obs_offset01": 2.0,
+      "obs_offset02": 1.7,
+      "vel_init": 2.0,
+      "vel_smallstatic": 2.0,
+      "vel_dynamic": 3.0
+    },
+
+    "stop_traffic": {
+      "1023": 0,
+      "stop_line_list": [
+        [0, 0],
+        [7, 0],
+        [302497.96385240223, 4123778.8441000096],
+        [11, 0],
+        [0, 0],
+        [302509.35831425735, 4123843.354859372],
+        [302545.5819648632, 4123864.7906541233],
+        [0, 0],
+        [302600.15326571086, 4123989.5551171405],
+        [0, 0],
+        [302596.85866080364, 4124094.9471331],
+        [302549.4630096428, 4124127.9687277353],
+        [0, 0],
+        [302576.6137394558, 4124003.4805796235],
+        [0, 0],
+        [302554.1087233793, 4123895.0197322285],
+        [302533.68679406645, 4123853.6209073053],
+        [0, 0],
+        [0, 0],
+        [0, 0]
+      ],
+      "stop_distance_pre": 9,
+      "stop_distance": 8.0,
+      "stop_line_time": 3.3,
+
+      "bump_point": [302567.809597, 4123753.79466959],
+      "tf_normal_target_spped_": 5.0,
+      "tf_straight_done_target_speed_": 6.9,
+      "tf_left_done_target_speed_": 5.0,
+      "tf_reduce_target_speed_": 4.0,
+      "tf_emergency_target_speed_": 6.9,
+
+      "bump_init_velocity": 5.5,
+      "bump_approach_velocity": 3.5,
+      "bump_slow_velocity": 2.0,
+      "bump_done_velocity": 5.5,
+
+      "bump_approach_dis": 15.0,
+      "bump_slow_dis": 8.0,
+      "bump_escape_dis": 3.0,
+
+      "two_stop_line": [
+        [302476.79986275895, 4123845.5405130126],
+        [302486.74087104644, 4123854.396132874]
+      ]
+    }
+  }
+}

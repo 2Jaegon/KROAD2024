@@ -1,0 +1,8 @@
+red
+orange
+green
+left
+left&green
+red&left
+red&orange
+orange&left

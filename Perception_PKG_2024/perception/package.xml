@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="2">
+  <name>perception</name>
+  <version>1.0.1</version>
+  <description>
+    This package contains the launch files for the mission.
+  </description>
+  <maintainer email="garamk83@gmail.com">Garam Kim</maintainer>
+  <author>Garam Kim</author>
+  <license>BSD</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_ros</buildtool_depend>
+  <buildtool_depend>ros_environment</buildtool_depend> <!-- ROS_VERSION + ROS_DISTRO -->
+
+  <build_depend>python3-distro</build_depend>  <!-- to get lsb_release for downloading Spinnaker -->
+  <build_depend>curl</build_depend>  <!-- to get ca-certificates for downloading Spinnaker -->
+  <build_depend>dpkg</build_depend>  <!-- for unpacking Spinnaker debs  -->
+
+  <depend>rclcpp</depend>
+  <depend>rclcpp_components</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>cv_bridge</depend>
+
+  <depend>vision_msgs</depend>
+  <depend>OpenCV</depend>
+  <depend>pcl_conversions</depend>
+  <depend>libusb-1.0-dev</depend> <!-- spinnaker dependency -->
+  <depend>ffmpeg</depend> <!-- spinnaker dependency -->
+
+  <depend>yaml-cpp</depend> <!-- parameter definition file parsing -->
+
+  <depend>camera_info_manager</depend>
+  <depend>flir_camera_msgs</depend>
+  <depend>image_transport</depend>
+
+  <!-- <exec_depend>velodyne_driver</exec_depend>
+  <exec_depend>velodyne_laserscan</exec_depend>
+  <exec_depend>velodyne_msgs</exec_depend>
+  <exec_depend>velodyne_pointcloud</exec_depend>
+
+  <exec_depend>lidar</exec_depend> -->
+  
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
+
+
+<!-- <?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="2">
+  <name>perception</name>
+  <version>1.0.1</version>
+  <description>
+    This package contains the launch files for the mission.
+  </description>
+  <maintainer email="garamk83@gmail.com">Garam Kim</maintainer>
+  <author>Garam Kim</author>
+  <license>BSD</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>cv_bridge</depend>
+  <exec_depend>velodyne_driver</exec_depend>
+  <exec_depend>velodyne_laserscan</exec_depend>
+  <exec_depend>velodyne_msgs</exec_depend>
+  <exec_depend>velodyne_pointcloud</exec_depend>
+  <depend>vision_msgs</depend>
+  <depend>OpenCV</depend>
+  <depend>pcl_conversions</depend>
+
+  <exec_depend>lidar</exec_depend>
+  
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package> -->

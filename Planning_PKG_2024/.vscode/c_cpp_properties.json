@@ -1,0 +1,31 @@
+{
+  "configurations": [
+    {
+      "name": "Linux",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "/home/ulix7990/planning_ws/src/Planning_PKG_2024/include/**",
+        "/home/ulix7990/planning_ws/src/Planning_PKG_2024/include/planning_pkg_2024/**",
+        "/home/ulix7990/planning_ws/src/Planning_PKG_2024/include/planning_pkg_2024/*",
+        "/opt/ros/humble/include/**",
+        "${workspaceFolder}/include",
+        "${workspaceFolder}/src/**"
+      ],
+      "browse": {
+        "path": [
+          "/home/ulix7990/planning_ws/src/Planning_PKG_2024/include",
+          "/opt/ros/humble/include"
+        ],
+        "limitSymbolsToIncludedHeaders": true,
+        "databaseFilename": ""
+      },
+      "defines": [],
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "c17",
+      "cppStandard": "gnu++17",
+      "intelliSenseMode": "linux-gcc-x64",
+      "configurationProvider": "ms-vscode.cmake-tools"
+    }
+  ],
+  "version": 4
+}
